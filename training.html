@@ -31,8 +31,8 @@
 
 <script>
     function message_click(){
-        // fetch("http://training.satyajeetsahu.com/training/what_is_my_name")
-        fetch("http://localhost:40001/what_is_my_name")
+        fetch("http://training.satyajeetsahu.com/training/what_is_my_name")
+        // fetch("http://localhost:40001/what_is_my_name")
         .then(response => response.json())
         .then(json => {
             second_div = document.getElementById("second_div");
@@ -42,8 +42,8 @@
     }
 
     function square_click(){
-        // fetch("http://training.satyajeetsahu.com/training/return_square")
-        fetch("http://localhost:40001/return_square",{
+        fetch("http://training.satyajeetsahu.com/training/return_square",{
+        // fetch("http://localhost:40001/return_square",{
             method: "POST",
             body: JSON.stringify({
                 "number":6
@@ -61,8 +61,8 @@
     }
 
     function bomb_click(){
-        // fetch("http://training.satyajeetsahu.com/training/blast_the_bomb")
-        fetch("http://localhost:40001/blast_the_bomb")
+        fetch("http://training.satyajeetsahu.com/training/blast_the_bomb")
+        // fetch("http://localhost:40001/blast_the_bomb")
         .then(response => response.json())
         .then(json => {
             second_div = document.getElementById("second_div");
